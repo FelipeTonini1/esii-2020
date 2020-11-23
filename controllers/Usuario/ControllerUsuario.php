@@ -50,10 +50,11 @@ use DAO\DAOUsuario;
       public function salvarUsuario($nome,$email,$celular,$login,$senha){
           $daoUsuario = new DAOUsuario();
           try{
-              $daoUsuario->incluirUsuario($nome,$email,$celular,$login,$senha);
+              $retorno = $daoUsuario->incluirUsuario($nome,$email,$celular,$login,$senha);
           }catch(\Exception $e){
               throw new \Exception($e->getMessage());
           }
+          return $retorno
       }
  }
  ?>
