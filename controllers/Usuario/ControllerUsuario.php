@@ -5,7 +5,7 @@ namespace controller;
 $separador = DIRECTORY_SEPARATOR;
 $root = $_SERVER['DOCUMENTE_ROOT'];
 
-require_once($root.'../DAO/DAOUsuario.php');
+require_once($root.'/esii-2020/DAO/DAOUsuario.php');
 
 use DAO\DAOUsuario;
 
